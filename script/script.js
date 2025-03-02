@@ -38,7 +38,7 @@ changeButton.addEventListener('click',function(){
 
     const completedButtons = document.querySelectorAll('.btn-completed'); 
     const taskCountElement = document.getElementById('taskA'); 
-    const navbarCountElement = document.querySelector('.bg-blue-100'); 
+    const navbarCountElement = document.querySelector('#count'); 
     const activityLogContainer = document.getElementById('activityLogContainer'); 
     const clearHistoryButton = document.querySelector('.bg-white.rounded .btn-primary'); 
 
