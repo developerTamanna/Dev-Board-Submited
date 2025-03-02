@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+ <!-- google font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+ <!-- font awesome cdn -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- style css link -->
+  <link rel="stylesheet" href="./styles/style.css">
+    <title>Dev-Board</title>
+    <link rel="shortcut icon" href="./assets/checkbox.png" type="image/x-icon">
+    
+
+</head>
+<body class="poppins-font">
+
+    <!-- nev bar -->
+    <header class="w-11/12 mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+            
+              <!-- <a class="btn btn-ghost text-xl">DevBoard</a> -->
+              <div class=" flex items-center gap-2">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-3xl ">Dev<span class="font-bold text-3xl text-black">Doard</span></h1>
+              </div>
+            </div>
+            
+            <div  class="navbar-end">
+              <a  id="back-to"  class="btn bg-blue-600 text-white">Back to Disk</a>
+            </div>
+          </div>
+    </header>
+
+    <main class="w-11/12 mx-auto my-4">
+       <section class="mt-6">
+        <h1 class="text-center p-4 font-bold text-3xl">blog</h1>
+      <div class="space-y-7">
+        <!-- 1 -->
+        <div class="bg-white-500 rounded-md  shadow-md p-6">
+            <h3 class="text-2xl font-bold">Question-1: What are the different ways to select an element in the DOM?</h3>
+       
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <h3 class="text-2xl font-normal leading-10">Dom(Documents  object model)  এ এলিমেন্ট সিলেক্ট করার অনেক উপায় আছে
+
+                যেমন 
+                getElementById = ID দিয়ে সিলেক্ট <br> <br>
+                getElementsByClassName = Class দিয়ে সিলেক্ট <br> <br>
+                getElementsByTagName = Tag name দিয়ে সিলেক্ট <br> <br>
+                querySelector = CSS সিলেক্টর (প্রথম ম্যাচ) 
+                querySelectorAll = CSS সিলেক্টর (সব ম্যাচ)</h3>
+            </div>
+            <!-- 2 -->
+        <div class="bg-white-500 rounded-md p-6 shadow-md">
+            <h3 class="text-2xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+       
+        <br> <br>
+        <hr>
+        <br>
+        <br>
+            <h3 class="text-2xl font-normal leading-10">innerHTML: একটি এলিমেন্টের HTML কন্টেন্ট, যার মধ্যে ট্যাগও অন্তর্ভুক্ত থাকে। <br> <br>
+                innerText: দৃশ্যমান টেক্সট কন্টেন্ট ফেরত দেয়, HTML ট্যাগ বাদ দিয়ে এবং CSS স্টাইল  অনুসরণ করে। <br> <br>
+                textContent: এলিমেন্টের সব টেক্সট কন্টেন্ট ফেরত দেয়, গোপন টেক্সটসহ, স্টাইল বা দৃশ্যমানতার পার্থক্য না করে।</h3>
+            </div>
+            <!-- 3 -->
+        <div class="bg-white-500 rounded-md p-6 shadow-md">
+            <h3 class="text-2xl font-bold">Question-3: What is event delegation in the DOM?
+
+            </h3>
+       
+        <br> <br>
+        <hr>
+        <br>
+        <br>
+            <h3 class="text-2xl font-normal leading-10">ইভেন্ট ডেলিগেশন হলো DOM এ একটি কৌশল যেখানে  প্রতিটি উপাদানে আলাদা করে ইভেন্ট লিসেনার সংযুক্ত করার পরিবর্তে একটি প্যারেন্ট উপাদানে একটি ইভেন্ট লিসেনার সংযুক্ত করে। ইভেন্টটি লক্ষ্য উপাদান থেকে প্যারেন্ট উপাদানে "বাবল" হয়, এবং প্যারেন্ট ইভেন্টটি ম্যানেজ করে।</h3>
+            </div>
+            <!-- 4 -->
+        <div class="bg-white-500 rounded-md p-6 shadow-md">
+            <h3 class="text-2xl font-bold">Question-4: What is event bubbling in the DOM?
+
+            </h3>
+        
+          <br> <br>
+          <hr>
+          <br>
+          <br>
+            <h3 class="text-2xl font-normal leading-10 ">ইভেন্ট বাবলিং DOM এ একটি প্রক্রিয়া যেখানে কোনো ইভেন্ট, যেমন ক্লিক, একটি উপাদানে ঘটলে তা প্রথমে সেই উপাদানে ঘটতে থাকে, তারপর "বাবল" হয়ে উপরের প্যারেন্ট উপাদানে পৌঁছায়, এবং এই প্রক্রিয়া ডকুমেন্টের রুট (root) পর্যন্ত চলতে থাকে।
+
+                যখন কোনো ইভেন্ট চাইল্ড উপাদানে ঘটবে, তখন প্রথমে ওই চাইল্ড উপাদানে ইভেন্ট লিসেনার চলবে।
+                তারপর সেই ইভেন্টটি প্যারেন্ট উপাদানে বাবল হয়ে চলে যাবে, যদি প্যারেন্টে সেই ইভেন্টের জন্য কোনো লিসেনার থাকে, তাহলে সেটি ট্রিগার হবে।
+                এই প্রক্রিয়া চলতে চলতে ইভেন্টটি  document পর্যন্ত পৌঁছায়</h3>
+            </div>
+            <!-- 5 -->
+        <div class="bg-white-500 rounded-md p-6 shadow-md">
+            <h3 class="text-2xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?
+
+            </h3>
+       
+            <br> <br>
+            <hr>
+            <br>
+            <br>
+            <h3 class="text-2xl font-normal leading-10">1. এলিমেন্ট তৈরি করা:
+                javascript
+                Copy
+                Edit
+                let newElement = document.createElement('div'); 
+                newElement.textContent = 'Hello, World!';
+                2. এলিমেন্ট যোগ করা:
+                javascript
+                Copy
+                Edit
+                document.body.appendChild(newElement); 
+                3. এলিমেন্ট মুছে ফেলা:
+                javascript
+                Copy
+                Edit
+                newElement.remove(); </h3>
+            </div>
+      </div>
+       </section>
+    </main>
+
+    <script src="./script/back.js"></script>
+</body>
+</html>
