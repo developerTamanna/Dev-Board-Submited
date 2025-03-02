@@ -47,7 +47,7 @@ changeButton.addEventListener('click',function(){
         button.addEventListener('click', function() {
             
             const taskName = button.parentElement.parentElement.querySelector('h2').textContent;
-            const confirmCompletion = confirm(`Are you sure you want to mark "${taskName}" as completed?`);
+            const confirmCompletion = confirm(`Board Update Successfully!!`);
 
             
             if (confirmCompletion) {
@@ -74,7 +74,7 @@ changeButton.addEventListener('click',function(){
 
                 completedTaskCount++;
                 if (completedTaskCount === totalTasks) {
-                    alert('Congrats! You have completed all tasks! ');
+                    alert('Congrats! You have completed all tasks!');
                 }
             }
         });
