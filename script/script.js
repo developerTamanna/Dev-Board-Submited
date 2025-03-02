@@ -41,7 +41,8 @@ changeButton.addEventListener('click',function(){
     const navbarCountElement = document.querySelector('#count'); 
     const activityLogContainer = document.getElementById('activityLogContainer'); 
     const clearHistoryButton = document.querySelector('.bg-white.rounded .btn-primary'); 
-
+    let completedTaskCount = 0;
+    const totalTasks = completedButtons.length;
     completedButtons.forEach(button => {
         button.addEventListener('click', function() {
             
@@ -70,6 +71,11 @@ changeButton.addEventListener('click',function(){
                 logEntry.classList.add('p-4', 'rounded-lg', 'border-green-500', 'shadow-lg', 'bg-gray-100', 'mb-2', 'text-lg', 'font-semibold')
                 
                 activityLogContainer.appendChild(logEntry);
+
+                completedTaskCount++;
+                if (completedTaskCount === totalTasks) {
+                    alert('Congrats! You have completed all tasks! ');
+                }
             }
         });
     });
