@@ -54,15 +54,12 @@ changeButton.addEventListener('click',function(){
                 
                 button.disabled = true;
 
-                
                 let taskCount = parseInt(taskCountElement.textContent);
                 taskCountElement.textContent = taskCount - 1;
 
-                
                 let navbarCount = parseInt(navbarCountElement.textContent.trim());
                 navbarCountElement.textContent = ` ${navbarCount + 1} `;
 
-                
                 const now = new Date();
                 const timeString = now.toLocaleTimeString();
                 const logEntry = document.createElement('p');
